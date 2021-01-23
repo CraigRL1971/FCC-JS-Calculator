@@ -1,0 +1,159 @@
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.bg_colour {
+    background-color: #1f1304;
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+}
+
+.calculator_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #80643d;
+    border-radius: 3px;;
+    height: auto;
+    width: 50%;
+    margin-left: 25%;
+    background-color: #a87732;
+}
+
+.input_wrapper {
+    background-color: cornsilk;
+    color: #141414;
+}
+
+.output_wrapper {
+    background-color: #141414;
+    color: #fff;
+}
+
+.input_wrapper, .output_wrapper {
+    border-radius: 3px;
+    height: auto;
+    width: 95%;
+    padding: 0 0.5rem;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.keypad_wrapper {
+    height: auto;
+    width: 95%;
+}
+
+.clear_key {
+    grid-area: _clear;
+}
+
+.divide_key {
+    grid-area: _divide;
+}
+
+.multiply_key {
+    grid-area: _multiply;
+}
+
+.seven_key {
+    grid-area: _seven;
+}
+
+.eight_key {
+    grid-area: _eight;
+}
+
+.nine_key {
+    grid-area: _nine;
+}
+
+.subtract_key {
+    grid-area: _subtract;
+}
+
+.four_key {
+    grid-area: _four;
+}
+
+.five_key {
+    grid-area: _five;
+}
+
+.six_key {
+    grid-area: _six;
+}
+
+.add_key {
+    grid-area: _add;
+}
+
+.one_key {
+    grid-area: _one;
+}
+
+.two_key {
+    grid-area: _two;
+}
+
+.three_key {
+    grid-area: _three;
+}
+
+.equals_key {
+    grid-area: _equals;
+}
+
+.zero_key {
+    grid-area: _zero;
+}
+
+.decimal_key {
+    grid-area: _decimal;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "_clear _clear _divide _multiply"
+        "_seven _eight _nine _subtract"
+        "_four _five _six _add"
+        "_one _two _three _equals"
+        "_zero _zero _decimal .";
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.keypad > p {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    text-align: center;
+    background-color: cadetblue;
+    color: #000;
+    cursor: pointer;
+}
+
+.keypad > p:hover {
+    background-color: blue;
+}
+
+.keypad_anchor {
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
